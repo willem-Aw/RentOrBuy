@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larana Rent – Luxury Hotel & Suite Rentals in City</title>
+    <meta name="description"
+        content="Book luxury hotel rooms and suites in the heart of City. Larana Rent offers premium accommodations, world-class amenities, and exceptional service.">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <header class="container-full header">
+        <!-- Menu bar: Logo, Buy, Rent, Headline, Contact -->
+        <div class="lh__navbar container flex-space-between">
+            <div class="lh__logo">
+                <a href="#" class="lh__logo-link">
+                    <img src="./assets/imgs/LogoLight.svg" alt="Larana Hotel Logo">
+                </a>
+            </div>
+
+            <nav class="lh__navbar-menu">
+                <ul class="lh__nav-links flex-end">
+                    <li>
+                        <a href="#" class="lh__nav-link btn-sm btn-primary text-center btn-border-primary">Rent</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lh__nav-link btn-sm btn-primary text-center btn-border-primary">Buy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lh__nav-link btn-sm btn-primary text-center btn-border-primary">Headline</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lh__nav-link btn-sm btn-primary text-center btn-border-primary">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container-full hero">
+            <div class="lh__hero">
+                <div class="lh__hero-content grid">
+                    <div class="lh__hero-text grid">
+                        <div class="flex-column-center">
+                            <h1 class="lh__hero-title uppercase">
+                                Welcome to <span>Larana Rent</span>
+                            </h1>
+                            <p class="lh__hero-subtitle">Discover a luxurious escape in the heart of the city, where
+                                impeccable service, refined style, and world-class amenities come together to create an
+                                extraordinary stay.</p>
+                            <a href="#" class="btn-lg btn btn-primary btn-border-primary lh_btn-discover">Discover
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="lh__hero-mini-images flex-column-center">
+                        <figure>
+                            <img src="./assets/imgs/s1.jpg" alt="Mini Image 1">
+                        </figure>
+                        <figure>
+                            <img src="./assets/imgs/s.jpg" alt="Mini Image 1">
+                        </figure>
+                        <figure>
+                            <img src="./assets/imgs/s1.jpg" alt="Mini Image 1">
+                        </figure>
+                    </div>
+                    <div class="lh__hero-image">
+                        <img src="./assets/imgs/s2.jpg" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-full overview">
+            <div class="lh__overview grid">
+                <div class="lh__overview-text grid ">
+                    <div>
+                        <h2>Overview</h2>
+                        <p>Welcome to Hotel Larana, where luxury meets comfort. Nestled in the heart of the city, our
+                            hotel offers premium accommodations, world-class amenities, and personalized service to make
+                            your stay unforgettable. Welcome to Hotel Larana, where luxury meets comfort. Nestled in the
+                            heart of the city, our hotel offers premium accommodations, world-class amenities, and
+                            personalized service to make your stay unforgettable.</p>
+                        <div class="lh__overview-thumb flex-center">
+                            <figure>
+                                <img src="./assets/imgs/s4.jpg" alt="inside hotel view">
+                            </figure>
+
+                            <figure>
+                                <img src="./assets/imgs/s4.jpg" alt="inside hotel view">
+                            </figure>
+
+                            <figure>
+                                <img src="./assets/imgs/s4.jpg" alt="inside hotel view">
+                            </figure>
+
+                            <figure>
+                                <img src="./assets/imgs/s4.jpg" alt="inside hotel view">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="lh__overview-image">
+                    <img src="./assets/imgs/s3.jpg" alt="outside hotel view">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-full mission">
+            <div class="lh__mision">
+                <div class="lh__mission-content grid">
+                    <div class="lh__mission-text">
+                        <h2>Our <br />Mission</h2>
+                        <p>At Hotel Larana, we aim to provide an exceptional experience for every guest. From elegant
+                            rooms to exclusive services, we ensure a comfortable, relaxing, and memorable stay.</p>
+                    </div>
+                    <div class="lh__mission-thumb">
+                        <div class="flex-center">
+                            <figure>
+                                <img src="./assets/imgs/s.jpg" alt="mission image">
+                            </figure>
+                            <figure>
+                                <img src="./assets/imgs/s.jpg" alt="mission image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./assets/imgs/s4.jpg" alt="waterpool">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container-full room-type">
+            <div class="lh__room-type grid">
+                <div class="lh__room-title">
+                    <div>
+                        <h2>Room Type</h2>
+                        <!-- Filter -->
+                        <h4>
+                            Filter by:
+                        </h4>
+                        <div class="custom-filter-wrapper">
+                            <input type="text" id="filterInput" placeholder="Select Filter Options" readonly
+                                value="All" />
+                            <div class="custom-options">
+                                <input type="text" name="search-options" placeholder="Search options..." />
+                                <div data-value="All">All</div>
+                                <div data-value="Single room">Single room</div>
+                                <div data-value="Double room">Double room</div>
+                                <div data-value="Suite">Suite</div>
+                                <div data-value="Deluxe">Deluxe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lh__room-type-cards grid">
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s1.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Single Room</h3>
+                            <p>Experience comfort and convenience in our Single Room, designed for solo travelers
+                                seeking a cozy and functional space.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s2.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Double Room</h3>
+                            <p>Enjoy a spacious and comfortable stay in our Double Room, perfect for couples or friends
+                                traveling together.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s3.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Suite</h3>
+                            <p>Indulge in luxury and elegance in our Suite, featuring separate living areas and premium
+                                amenities for an unforgettable experience.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s4.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Deluxe Room</h3>
+                            <p>Experience enhanced comfort and style in our Deluxe Room, offering upgraded amenities and
+                                a refined ambiance for a memorable stay.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s1.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Single Room</h3>
+                            <p>Experience comfort and convenience in our Single Room, designed for solo travelers
+                                seeking a cozy and functional space.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s2.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Double Room</h3>
+                            <p>Enjoy a spacious and comfortable stay in our Double Room, perfect for couples or friends
+                                traveling together.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s3.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Suite</h3>
+                            <p>Indulge in luxury and elegance in our Suite, featuring separate living areas and premium
+                                amenities for an unforgettable experience.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="lh__room-type-card">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/imgs/s4.jpg" alt="Room Type Image">
+                            </a>
+                        </figure>
+                        <div class="lh__room-type-card-content flex-column-between">
+                            <h3>Deluxe Room</h3>
+                            <p>Experience enhanced comfort and style in our Deluxe Room, offering upgraded amenities and
+                                a refined ambiance for a memorable stay.</p>
+                            <p>
+                                <span>4 people</span>
+                                <span>4 m<sup>2</sup></span>
+                            </p>
+                            <p>
+                                <strong>
+                                    400$
+                                </strong>
+                            </p>
+                            <a href="#" class="btn-sm btn btn-primary btn-border-primary text-center">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-full footer">
+        <div class="lh__footer flex-column-center">
+            <div class="lh__footer-logo">
+                <a href="#">
+                    <img src="./assets/imgs/Logo.svg" alt="Larana Logo">
+                </a>
+            </div>
+            <p>
+                Copyright &copy; <span class="current-year">2025</span>
+            </p>
+            <nav class="lh__footer-navbar">
+                <ul class="lh__footer-nav-links flex-center">
+                    <li>
+                        <a href="#" class="lh__nav-link">Rent</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lh__nav-link">Buy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lh__nav-link">Headline</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lh__nav-link">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/app.js"></script>
+</body>
+
+</html>
