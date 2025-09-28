@@ -16,14 +16,15 @@
         <div class="lh__navbar container flex-space-between">
             <div class="lh__logo">
                 <a href="#" class="lh__logo-link">
-                    <img src="./assets/imgs/LogoLight.svg" alt="Larana Hotel Logo">
+                    <img src="./assets/imgs/Logo.svg" alt="Larana Hotel Logo">
                 </a>
             </div>
 
             <nav class="lh__navbar-menu">
                 <ul class="lh__nav-links flex-end">
                     <li>
-                        <a href="./rent.html" class="lh__nav-link btn-sm btn-primary text-center btn-border-primary">Rent</a>
+                        <a href="./rent.html"
+                            class="lh__nav-link btn-sm btn-primary text-center btn-border-primary">Rent</a>
                     </li>
                     <li>
                         <a href="#" class="lh__nav-link btn-sm btn-primary text-center btn-border-primary">Buy</a>
@@ -142,16 +143,34 @@
                         <h4>
                             Filter by:
                         </h4>
-                        <div class="custom-filter-wrapper">
-                            <input type="text" id="filterInput" placeholder="Select Filter Options" readonly
-                                value="All" />
-                            <div class="custom-options">
-                                <input type="text" name="search-options" placeholder="Search options..." />
-                                <div data-value="All">All</div>
-                                <div data-value="Single room">Single room</div>
-                                <div data-value="Double room">Double room</div>
-                                <div data-value="Suite">Suite</div>
-                                <div data-value="Deluxe">Deluxe</div>
+                        <div class="lh__filter-content is-primary">
+                            <div class="custom-filter-wrapper">
+                                <input type="text" id="filterInput" placeholder="Select Filter Options" readonly=""
+                                    value="All">
+                                <div class="custom-options">
+                                    <input type="text" name="search-options" placeholder="Search options...">
+                                    <div data-value="All">All</div>
+                                    <div data-value="Single room">Single room</div>
+                                    <div data-value="Double room">Double room</div>
+                                    <div data-value="Suite">Suite</div>
+                                    <div data-value="Deluxe">Deluxe</div>
+                                </div>
+                            </div>
+                            <div class="checkbox-wrapper flex">
+                                <div class="flex half-gap align-center">
+                                    <input type="checkbox" name="buy" id="buy">
+                                    <label for="buy" class="flex half-gap align-center">
+                                        <span></span>
+                                        Buy
+                                    </label>
+                                </div>
+                                <div class="flex half-gap align-center">
+                                    <input type="checkbox" name="rent" id="rent">
+                                    <label for="rent" class="flex half-gap align-center">
+                                        <span></span>
+                                        Rent
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
