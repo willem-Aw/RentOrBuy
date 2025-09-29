@@ -240,6 +240,10 @@ img {
     display: block;
 }
 
+section.has-padding {
+    padding: var(--section-padding-block);
+}
+
 .btn {
     padding: 0.5rem 1.75rem;
     font-size: var(--regular-font-size);
@@ -339,7 +343,7 @@ img {
 
     /* height: var(--_hero-height); */
     color: var(--_hero-text-color);
-    padding: var(--_hero-padding);
+    padding-block: var(--_hero-padding);
 
 
     h1 {
@@ -537,9 +541,12 @@ img {
 
 .room-type {
     --_room-card-width: calc((100% / 3) - 1rem);
+    /* --_room-figure-height: 250px; */
+    --_room-figure-height: clamp(200px, 250px, 250px);
     --_room-figure-height: 250px;
     --_content-border-width: 1px;
     --_paragraph-height: 1.5rem;
+    --_listing-gap: 1.75rem 1rem;
 
 
     padding-block: var(--section-padding-block);
@@ -569,7 +576,7 @@ img {
                 gap: 1.75rem 1rem; */
         grid-column: 3 / span 4;
         grid-template-columns: repeat(3, var(--_room-card-width));
-        gap: 1.75rem 1rem;
+        gap: var(--_listing-gap);
 
         .lh__room-type-card {
             height: 100%;
@@ -805,15 +812,14 @@ img {
 .rent-banner {
     --_hero-padding: 2rem;
     --_hero-gap: 2.5rem;
+    --_banner-temp-col: 55% 45%;
 
     background-color: var(--hero-bg-color);
-    padding: var(--_hero-padding);
+    padding-block: var(--_hero-padding);
 
     .lh__banner {
-        grid-template-columns: 60% 40%;
-        grid-template-areas:
-            "title topProduct"
-            "bottomProduct bottomProduct";
+        grid-template-columns: var(--_banner-temp-col);
+        grid-template-areas: "title topProduct";
         gap: var(--_hero-gap) 0;
 
         .lh__title-n-filter {
@@ -831,32 +837,11 @@ img {
             }
 
             .lh__room-type-cards {
-                --_room-card-width: calc((100% / 2) - 1rem);
+                /* --_room-card-width: calc((100% / 2) - 1rem); */
+                --_room-card-width: max(calc((100% / 2) - 1rem), 200px);
+                --_top-prd-col: repeat(auto-fill, 250px, 1fr);
 
                 grid-template-columns: repeat(2, var(--_room-card-width));
-
-                .lh__room-type-card-content {
-                    &>p {
-                        &:first-of-type {
-                            height: initial;
-                        }
-                    }
-                }
-            }
-
-        }
-
-        .lh__bottom-product {
-            grid-area: bottomProduct;
-
-            &.room-type {
-                --_room-card-width: calc((100% / 4) - 1rem);
-                background-color: transparent;
-                padding: 0;
-            }
-
-            .lh__room-type-cards {
-                grid-template-columns: repeat(4, var(--_room-card-width));
 
                 .lh__room-type-card-content {
                     &>p {
@@ -871,7 +856,31 @@ img {
     }
 }
 
-/* End filter */
+.lh__listing-product {
+    --_listing-gap: 2.2rem 1rem;
+
+    &.room-type {
+        /* --_room-card-width: calc((100% / 4) - 1rem); */
+        --_room-card-width: max(calc((100% / 4) - 1rem), 200px);
+
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .lh__room-type-cards {
+        /* grid-template-columns: repeat(4, var(--_room-card-width)); */
+        grid-template-columns: repeat(auto-fill, minmax(var(--_room-card-width), 1fr));
+
+        .lh__room-type-card-content {
+            &>p {
+                &:first-of-type {
+                    height: initial;
+                }
+            }
+        }
+    }
+
+}
 
 
 .lh__footer {
