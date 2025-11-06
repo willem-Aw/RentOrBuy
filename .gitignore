@@ -1,0 +1,6 @@
+# Ignore the screenshot file that was accidentally added
+"Screenshot From 2025-09-25 09-24-42.png"
+
+# Common ignores (optional)
+.DS_Store
+node_modules/
